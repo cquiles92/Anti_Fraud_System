@@ -37,12 +37,15 @@ This is an open endpoint assigned for the creation of new User accounts. By defa
 Roles
 -------------
 Administrator
+
 This role is assigned to the first account made in the system and cannot be disabled or deleted. This role is responsible for the following: Locking/Unlocking accounts, Assigning roles, and Deleting users.
 
 Support
+
 This role is responsible for reporting suspicious (banned) IP addresses, suspicious card numbers, altering and modifying transactions, and accessing Transaction history.
 
 Merchant
+
 This role is responsible for uploading and sending Transactions to the Anti Fraud System for approval or denial.
 
 
@@ -175,7 +178,7 @@ The formula for decreasing the limit:
 
 new_limit = 0.8 * current_limit - 0.2 * value_from_transaction
 
-| Feedback →        |               |                   |               |
+| Feedback →        | ALLOWED       | MANUAL_PROCESSING | PROHIBITED    |
 | Validity ↓        | ALLOWED       | MANUAL_PROCESSING | PROHIBITED    |
 | ----------------- |:-------------:|:-----------------:|:-------------:|
 | ALLOWED           |   Exception   |   ↓ max ALLOWED   | ↓ max ALLOWED |
